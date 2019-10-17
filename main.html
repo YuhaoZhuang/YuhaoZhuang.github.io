@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Data Structures and Altogirhms</title>
+        <meta name="description" content="Intersting algorithms and data structures.">
+        <link rel="stylesheet" href="main.css">
+        <h1> Data Structures and Algorithms</h1>
+        <hr>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="main.html">Overview</a>
+            <a href="#">Code</a>
+        </div>
+        <ul class="sidebar">    
+        <li><a href="main.html">Home</a></li>
+        <li><a href="static_array.html">static array</a></li>
+        <li><a href="Linked_list.html">Linked List</a></li>
+        <li><a href="BinaryTree.html">Binary Tree</a></li>
+        </ul>
+        <div style= "margin-left:18% ;padding:1px;">
+            <h2> What are data structures </h2>
+            <p> In standard definitions, Types are collection of values such as true,false, 1, 0, Data types are types collections of operations to manipulate the types, such as +,-,*,-. Abstract data type are specifications of the data types (what defines them). And Data structure is bascially the implementation of Abstract data types. In short, data structures are the implementations of how manage stored information in computers. </p>
+            <img src ="Algorithm.jpg", style ="float: left; width: 50%; height: 500 px; overflow: none;">
+            <img src ="data_structures.jpg", style ="float: right; width: 50%; height: 400px;">
+            <h2> Big O </h2>
+            <p> Big O notations are used to described the complexiy of algorithms, you can think of it as how many process the computer has to go through run the algorihm with the given intput.</p>
+            <p> Examples: </p>
+            <ol>
+                <li> 
+                    <p>int a = 10;</p>
+                    <ul> 
+                        <li>O(1), staetment only execute; once</li>
+                    <br>
+                    </ul>
+                </li>
+                <li> 
+                    <p>for (int i =0; i &lt N; i++){  </p>
+                    <p> &emsp; print("Hello World");</p>
+                    <p> }</p> 
+                    <ul>
+                        <li> O(N), The inner statement prints N times </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>for (int i =0; i &lt N; i++){  </p>
+                    <p> &emsp; for (int j =0; j %lt Nl j++;){</p>
+                    <p> &emsp;&emsp; print("Hello World");</p>
+                    <p> &emsp;}</p>
+                    <p> }</p> 
+                    <ul>
+                        <li> O(N^2), The outer loop runs N times, inner loop runs N times, the statement inside inner loop runs N^2 times.</li>
+                    </ul>
+                </li>
+            </ol>
+            
+            
+        </div>
+    </body>
+</html>
