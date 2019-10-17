@@ -21,6 +21,9 @@
         <li><a href="Linked_list.html">Linked List</a></li>
         <li><a href="Stack_Deque.html">Stacks_and_Queues</a></li>
         <li><a href="Binary_tree.html">Binary_tree</a></li>
+        <li><a href="Priority_queue.html">Priority_Queue</a></li>
+        <li><a href="AVL_Tree.html">AVL Tree</a></li>
+        <li><a href="Red_Black_Tree.html"></a></li>
         </ul>
         <div style= "margin-left:18% ;padding:1px;">
             <h2> What is a Tree?</h2>
@@ -39,6 +42,8 @@
             <img src ="binary_search.png", width= "300", height = "190">
             <h2> Adding and Removing Nodes</h2>
             <p> While adding nodes is pretty straigtforward as you literally just traverse through the binary search tree and find whichever node is smaller or greater than the current value, removing node is quite complicated. You first mark the node to be delted, then find the minimum key in that node's right subtree, you switch those 2 values, and then you can delte the minimum key node recusively. This method keeps the binary search tree's form as the minimum node in the right subtree of the node to be deleted will always be larger than any values in its predecessor's left subtree, and smaller than any values in its predecessr's right subtree. </p>
+            <h2> Why Binary search Tree</h2>
+            <p> Binary search tree has an average runtime of O(logN) rather O(N) to go find the element user desires because each time it searches, it divides the input size by 2. This make binary search tree a very efficient data structure for searching among large sets of data. </p>
             
         </div>
     </body>

@@ -27,6 +27,7 @@ p {
   overflow: auto;
   position : sticky;
   top: 47px;
+  font-size: 16px;
 }
 
 li a {
