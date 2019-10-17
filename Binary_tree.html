@@ -8,29 +8,38 @@
         <meta name="description" content="Intersting algorithms and data structures.">
         <link rel="stylesheet" href="main.css">
         <h1> Data Structures and Algorithms</h1>
-        <hr>
+        <hr>    
     </head>
     <body>
         <div class="topnav">
             <a href="Binary_tree.html">Overview</a>
-            <a href="#">Code</a>
+            <a href="Binary_tree_code.html">Code</a>
         </div>
         <ul class = "sidebar">    
-        <li><a href="main.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="static_array.html">Lists</a></li>
         <li><a href="Linked_list.html">Linked List</a></li>
-        <li><a href="Binarytree.html">Binary Tree</a></li>
+        <li><a href="Stack_Deque.html">Stacks_and_Queues</a></li>
+        <li><a href="Binary_tree.html">Binary_tree</a></li>
         </ul>
         <div style= "margin-left:18% ;padding:1px;">
-            <h2> Binary Tree</h2>
-            <p> A list is a collection of items in some type T</p>
-            <h3> Fixed Array</h3>
-            <p> The most intituive way of implementing a list is to store the values of type T into a fixed size array</p>
-            <img src="array.jpg" width= "280", height = "140"> 
-            <p> To insert an item, use array_name[index(start from 0)] = value.</p>
-            <h3> Dynamic Array</h3>
-            <p> Dynamic Arrays allows resizing of the original array. The ADT specifies to make a new array with the new size and copy the content from the old array, old array is then destoryed to free the memory.</p>
-            <img src ="dynamic_array.png" width= "450", height = "340">
+            <h2> What is a Tree?</h2>
+            <p> A Tree, in computer science terms, is a collection of nodes starting at root node, where each node is connected to zero or more child nodes via edges. No reference can be duplicated, and no nodes can point back to the root. </p>
+            <h2> Binary Tree </h2>
+            <p> A Binary tree is a tree that each node has at most two children, left and right child. </p>
+            <p> Binary Trees can be traversed in depth-first or breadth-first order. </p>
+            <p> Depth-first Order: Go to node N, recursively traverse N's left subtree, then rescursively travers N's right subtree. </p>
+            <p> Breadth-first order: visit every node on the same level before going to the next level.</p>
+            <p> A binary tree can also be viewed as a list, where the index for root is i, and left child is 2i + 1, right child 2i + 2, and parent(if not root, which is 0) at (i-1)/2. </p>
+            <img src ="binary_list.png" width= "350", height = "190">
+            <p> Binary Tree normal representation </p>
+            <img src ="binary.png", width= "500", height = "210">
+            <h2>Binary Search Tree </h2>
+            <p> Binary Search Tree is a binary tree which each node contains one comparable key, and the key's value is greater than any key stored in it's left subtree, and smaller than any in its right subtree. </p>
+            <img src ="binary_search.png", width= "300", height = "190">
+            <h2> Adding and Removing Nodes</h2>
+            <p> While adding nodes is pretty straigtforward as you literally just traverse through the binary search tree and find whichever node is smaller or greater than the current value, removing node is quite complicated. You first mark the node to be delted, then find the minimum key in that node's right subtree, you switch those 2 values, and then you can delte the minimum key node recusively. This method keeps the binary search tree's form as the minimum node in the right subtree of the node to be deleted will always be larger than any values in its predecessor's left subtree, and smaller than any values in its predecessr's right subtree. </p>
+            
         </div>
     </body>
 </html>
