@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Data Structures and Altogirhms</title>
+        <meta name="description" content="Intersting algorithms and data structures.">
+        <link rel="stylesheet" href="main.css">
+        <h1> Data Structures and Algorithms</h1>
+        <hr>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="Linked_list.html">Overview</a>
+            <a href="Linked_list_code.html">Code</a>
+        </div>
+        <ul class = "sidebar">    
+        <li><a href="index.html">Home</a></li>
+        <li><a href="static_array.html">Lists</a></li>
+        <li><a href="Linked_list.html">Linked List</a></li>
+        <li><a href="Stack_Deque.html">Stacks_and_Queues</a></li>
+        <li><a href="Binary_tree.html">Binary_tree</a></li>
+        <li><a href="Priority_queue.html">Priority_Queue</a></li>
+        <li><a href="AVL_Tree.html">AVL Tree</a></li>
+        <li><a href="Red_Black_Tree.html"></a></li>
+        </ul>
+        <div style= "margin-left:18% ;padding:1px;">
+            
+            <h3>Singly Linked List</h3>
+            <p> List can be implemented by Linked list, each item in a linked list compose of the item with type T, and a pointer to the next element in the lined list. </p>
+            <p> During initilization, the start of the linked list is the head, and the head points to nullptr if there is nothing else in the list. After adding each elemnts, each elements added previously points to the current item, and current item points to the nullptr, signifies the end of the list.</p>
+            <img src ="Linkedlist.png" style = " width = 500 ; height = 140;"> 
+            <h3> Doubly Linked List</h3>
+            <p>Singly linked list can easily be expanded and doesn't need to hassle to resize like dynamic arrays; however, it is very slow and inefficent to get the last item in the singly linked list since it is O(N) since you literally have to go through every item in the list to get the last item. Doubly linked list however, with a head and a tail, can easily solve this problem.</p>
+            <img src = "DoublyLinkedlist.png" style = " width =500; height = 120; "> 
+            <p>  Notice that both the head and the tails of Doubly Linked list points to a nullptr to signify the end of the list.</p>
+        </div>
+    </body>
+</html>
